@@ -1,0 +1,38 @@
+# --- Python backend ---
+backend/venv/
+backend/__pycache__/
+backend/.env
+backend/.pytest_cache/
+backend/.mypy_cache/
+
+# Telethon sessions (НЕ грузим в гит!)
+backend/sessions/
+backend/data/**/sessions/
+**/*.session
+**/*.session.enc
+
+# sqlite/кэш/медиа
+backend/data/**/*.sqlite
+backend/data/**/media_cache/
+backend/data/**/exports/
+backend/data/**/backups/
+
+# --- Frontend ---
+frontend/node_modules/
+frontend/dist/
+
+# Electron builds
+electron-builder.yml
+*.asar
+*.exe
+*.dmg
+*.AppImage
+release/
+out/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
